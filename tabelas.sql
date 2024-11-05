@@ -1,0 +1,15 @@
+CREATE DATABASE edutec;
+USE edutec;
+
+CREATE DATABASE IF NOT EXISTS testdb;
+USE testdb;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    sobrenome VARCHAR(255) NOT NULL
+);
+
+SELECT * FROM users;
+
+#R@0tR@0t
