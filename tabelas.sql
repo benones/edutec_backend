@@ -1,13 +1,20 @@
-CREATE DATABASE edutec;
-USE edutec;
+CREATE DATABASE c;
 
-CREATE DATABASE IF NOT EXISTS testdb;
-USE testdb;
+USE edutec2024;
 
-CREATE TABLE IF NOT EXISTS users (
+CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(255) NOT NULL,
-    sobrenome VARCHAR(255) NOT NULL
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
+
+
+
+CREATE TABLE scores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    score INT NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
 
 SELECT * FROM users;
