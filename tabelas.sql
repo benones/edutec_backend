@@ -1,4 +1,4 @@
-CREATE DATABASE c;
+CREATE DATABASE edutec2024;
 
 USE edutec2024;
 
