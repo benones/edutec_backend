@@ -19,4 +19,3 @@ CREATE TABLE scores (
 
 SELECT * FROM users;
 
-#R@0tR@0t
